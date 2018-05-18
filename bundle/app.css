@@ -655,6 +655,16 @@ a {
     margin: 0 auto 12px;
 }
 
+.section1 .section .subTitle2 {
+    color: #333333;
+    width: 84%;
+    line-height: 1.6em;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 2em;
+}
+
 .overlay {
     background-color: transparent;
     width: 100%;
