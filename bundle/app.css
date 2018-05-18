@@ -784,4 +784,22 @@ a {
     margin: 0.6em auto;
 }
 
-0
+.hr {
+    width: 100%;
+    display: block;
+    height: 1px;
+    border-top: 1px dotted #f1f1f1;
+    overflow: hidden;
+    margin: 3px auto 12px;
+}
+
+.section5 {
+    min-height: 100%;
+    height: auto;
+    overflow: visible;
+    padding: 3em 0;
+}
+
+.section5 img {
+    border-radius: 8px;
+}
