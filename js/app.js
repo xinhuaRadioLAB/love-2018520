@@ -180,10 +180,10 @@ $(function () {
     console.log(hash.query);
     console.log('====================================');
 
-    $('#hashTo').text(decodeURI(hash.query.t));
-    $('#hashWish').text(decodeURI(hash.query.w));
-    $('#hashFrom').text(decodeURI(hash.query.f));
-    $('#title').text(`For ` + decodeURI(hash.query.t));
+    // $('#hashTo').text(decodeURI(hash.query.t));
+    // $('#hashWish').text(decodeURI(hash.query.w));
+    // $('#hashFrom').text(decodeURI(hash.query.f));
+    // $('#title').text(`For ` + decodeURI(hash.query.t));
 
     // ?d-f=苗苗&t=幸运的男孩&w=你来接我我很开心！
 
@@ -200,13 +200,14 @@ $(function () {
     // 给封面title添加 hash截取的 title 字符串（同时包含 decodeURI 转码过程）
 
     // 替换title标签文字
-    $('title').append($('#hashTo').text() + '--来自' + $('#hashFrom').text());
+    // $('title').append($('#hashTo').text() + '--来自' + $('#hashFrom').text());
 
     // 添加 jplayer 播放控件 dom
     $('body').append('<div id="jquery_jplayer_1" class="jp-jplayer"></div>' +
         '<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">' +
         '<button class="jp-play iconPlay" role="button" tabindex="0">play</button>' +
         '</div>');
+
     // 初始化 jPlayer
     $("#jquery_jplayer_1").jPlayer({
         ready: function (event) {
@@ -244,22 +245,22 @@ window.onscroll = function () {
 
 var ani = {
     init: function () {
-        this.logo("#hvd");
+        this.logo("#hvd", { y: "30px" });
         this.logo("#ani1");
         this.logo("#ani2");
         this.logo("#ani3");
         //this.robot();
     },
-    logo: function (tag) {
+    logo: function (tag, config) {
         TweenMax.fromTo(tag, 2, {
             // from
             css: {
-                y: 0,
+                y: !config ? 0 : config.y0,
             }
         }, {
                 // to
                 css: {
-                    y: "30px",
+                    y: !config ? "30px" : config.y,
                 },
                 // 永久重复动画的选项
                 repeat: -1,
