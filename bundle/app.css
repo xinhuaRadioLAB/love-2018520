@@ -595,35 +595,6 @@ a {
     line-height: 32px;
 }
 
-
-/*.sectionIn a { padding: 20px; }*/
-
-
-/*.iphone-demo {
-    flex-grow: 1;
-    align-self: stretch;
-    flex-basis: 0;
-    justify-content: center;
-}
-.iphoneBox {
-    width: 300px;
-    height: 630px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-.iphoneBox img { margin: 89px auto auto 24px; }*/
-
-
-/*.feature-description {
-    flex-grow: 1;
-    align-self: stretch;
-    flex-basis: 0;
-    justify-content: center;
-}*/
-
 .section1 {
     z-index: 2;
     overflow: visible;
@@ -687,39 +658,12 @@ a {
 .overlay {
     background-color: transparent;
     width: 100%;
-    /*background-image: linear-gradient(rgba(0,0,0,0), rgba(118,0,0,1));
-    background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(118,0,0,1) 100%);*/
 }
-
-
-/*.overlay .section {
-    background-color: transparent;
-    height:100%;
-}*/
 
 .main {
     position: relative;
     z-index: 2;
 }
-
-
-/*.mask {
-    width: 100%;
-    background-color: rgba(31,30,52,1);
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
-.android-robot {
-    overflow: hidden;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: translate(50%, 50%) rotate(-45deg);
-}*/
 
 .slider-control {
     position: fixed;
@@ -821,45 +765,23 @@ a {
     text-decoration: underline;
 }
 
-.btn,
-.btn a {
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: normal;
+.sectionIn2 {
+    line-height: 24px;
+    width: 82%;
 }
 
-.btn {
-    padding-top: 30px;
+.sectionIn2 h2 {
+    /* text-align: center; */
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 400;
 }
 
-.btn a {
-    display: block;
-    border-radius: 8px;
-    border: #FFFFFF 1px solid;
-    width: 86px;
-    text-align: left;
-    padding: 10px 10px 10px 100px;
-    margin: 0 auto;
-    background-image: url(../img/github.png);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 45% auto;
+.sectionIn2 p {
+    /* text-indent: 2em; */
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0.6em auto;
 }
 
-.license {
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: normal;
-    width: 88%;
-    margin: 40px auto 0 auto;
-}
-
-.section6 {
-    padding: 0 10px;
-}
-
-.section5 p,
-.section6 p {
-    font-size: 20px;
-    font-weight: normal;
-}
+0
